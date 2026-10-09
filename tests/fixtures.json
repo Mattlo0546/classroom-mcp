@@ -1,0 +1,178 @@
+{
+ "/v1/courses": {
+  "courses": [
+   {
+    "id": "111",
+    "name": "Year 12 Biology",
+    "section": "12B",
+    "alternateLink": "https://classroom.google.com/c/111",
+    "courseState": "ACTIVE"
+   },
+   {
+    "id": "222",
+    "name": "Year 12 History",
+    "section": "12H",
+    "alternateLink": "https://classroom.google.com/c/222",
+    "courseState": "ACTIVE"
+   }
+  ]
+ },
+ "/v1/courses/111/topics": {
+  "topic": [
+   {
+    "topicId": "t1",
+    "name": "Unit 3 - Cell Biology"
+   }
+  ]
+ },
+ "/v1/courses/222/topics": {},
+ "/v1/courses/111/courseWorkMaterials": {
+  "courseWorkMaterial": [
+   {
+    "id": "m1",
+    "title": "Mitosis lesson slides",
+    "topicId": "t1",
+    "alternateLink": "https://classroom.google.com/m1",
+    "materials": [
+     {
+      "driveFile": {
+       "driveFile": {
+        "id": "F_SLIDES",
+        "title": "Mitosis"
+       }
+      }
+     },
+     {
+      "youtubeVideo": {
+       "title": "Mitosis in 5 min",
+       "alternateLink": "https://youtu.be/x"
+      }
+     }
+    ]
+   },
+   {
+    "id": "m2",
+    "title": "Worksheet",
+    "topicId": "t1",
+    "materials": [
+     {
+      "driveFile": {
+       "driveFile": {
+        "id": "F_PDF",
+        "title": "Cell worksheet.pdf"
+       }
+      }
+     },
+     {
+      "driveFile": {
+       "driveFile": {
+        "id": "F_IMG",
+        "title": "diagram.png"
+       }
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "/v1/courses/222/courseWorkMaterials": {},
+ "/v1/courses/111/courseWork": {
+  "courseWork": [
+   {
+    "id": "w1",
+    "title": "Mitosis essay",
+    "workType": "ASSIGNMENT",
+    "topicId": "t1",
+    "description": "500 words",
+    "dueDate": {
+     "year": 2026,
+     "month": 10,
+     "day": 14
+    },
+    "dueTime": {
+     "hours": 15
+    },
+    "alternateLink": "https://classroom.google.com/w1",
+    "materials": [
+     {
+      "link": {
+       "url": "https://example.com/rubric",
+       "title": "Rubric"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "/v1/courses/222/courseWork": {
+  "courseWork": [
+   {
+    "id": "w2",
+    "title": "WW1 source analysis",
+    "workType": "ASSIGNMENT",
+    "dueDate": {
+     "year": 2026,
+     "month": 10,
+     "day": 11
+    },
+    "dueTime": {
+     "hours": 8,
+     "minutes": 30
+    },
+    "materials": [
+     {
+      "driveFile": {
+       "driveFile": {
+        "id": "F_DOC",
+        "title": "Sources pack"
+       }
+      }
+     }
+    ]
+   }
+  ]
+ },
+ "/v1/courses/111/courseWork/-/studentSubmissions": {
+  "studentSubmissions": [
+   {
+    "courseWorkId": "w1",
+    "state": "CREATED"
+   }
+  ]
+ },
+ "/v1/courses/222/courseWork/-/studentSubmissions": {
+  "studentSubmissions": [
+   {
+    "courseWorkId": "w2",
+    "state": "TURNED_IN"
+   }
+  ]
+ },
+ "/v1/courses/111/announcements": {
+  "announcements": [
+   {
+    "text": "Test on Friday!",
+    "creationTime": "2026-10-08T09:00:00Z"
+   }
+  ]
+ },
+ "/drive/v3/files/F_SLIDES": {
+  "id": "F_SLIDES",
+  "name": "Mitosis",
+  "mimeType": "application/vnd.google-apps.presentation",
+  "modifiedTime": "2026-10-01T00:00:00Z"
+ },
+ "/drive/v3/files/F_SLIDES/export": "%PDF-1.4\n1 0 obj<<>>endobj\ntrailer<<>>\n%%EOF\n",
+ "/drive/v3/files/F_PDF": {
+  "id": "F_PDF",
+  "name": "Cell worksheet.pdf",
+  "mimeType": "application/pdf"
+ },
+ "/drive/v3/files/F_PDF?alt=media": "%PDF-1.4\n1 0 obj<<>>endobj\ntrailer<<>>\n%%EOF\n",
+ "/drive/v3/files/F_DOC": {
+  "id": "F_DOC",
+  "name": "Sources pack",
+  "mimeType": "application/vnd.google-apps.document"
+ },
+ "/drive/v3/files/F_DOC/export": "%PDF-1.4\n1 0 obj<<>>endobj\ntrailer<<>>\n%%EOF\n"
+}
