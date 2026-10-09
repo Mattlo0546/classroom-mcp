@@ -1,6 +1,6 @@
 # Google Classroom MCP
 
-An [MCP](https://modelcontextprotocol.io) server that gives AI tools (SlideMate, Claude Desktop, Claude Code, Codex)
+An [MCP](https://modelcontextprotocol.io) server that gives AI tools ([SlideMate](https://github.com/Mattlo0546/slidemate), Claude Desktop, Claude Code, Codex)
 read-only access to a student's **Google Classroom**: courses, upcoming assignments, announcements and class
 materials. It can also **download class slides** (Google Slides and Docs are saved as PDF) into one folder per course.
 
@@ -53,7 +53,7 @@ There's no way around that from your side.
 
 ## Use it
 
-### SlideMate
+### [SlideMate](https://github.com/Mattlo0546/slidemate)
 
 Settings → **Connections & sync** → *Add server*:
 
