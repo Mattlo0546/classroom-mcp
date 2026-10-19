@@ -1,0 +1,16 @@
+# classroom-mcp
+
+> Open-source MCP (Model Context Protocol) server for Google Classroom. It gives AI assistants (Claude Desktop, Claude Code, ChatGPT Codex CLI, Cursor, VS Code, SlideMate) read-only access to a student's courses, upcoming assignments with submission status, announcements and class materials, and downloads class slides (Google Slides/Docs exported as PDF). A single Python file with no dependencies; signs in with the user's own Google OAuth client using read-only scopes. MIT licence.
+
+## Docs
+- [README](https://github.com/Mattlo0546/classroom-mcp/blob/main/README.md): Google setup, install, client configs, tools, FAQ
+
+## Tools
+- gc_login, gc_status, gc_courses, gc_upcoming, gc_coursework, gc_announcements, gc_materials, gc_download, gc_sync / gc_sync_status
+
+## Install
+- `uv tool install --managed-python https://github.com/Mattlo0546/classroom-mcp/archive/refs/heads/main.zip` (command `classroom-mcp`), or run `python3 classroom_mcp.py`
+
+## Related
+- [canvas-mcp](https://github.com/Mattlo0546/canvas-mcp), [moodle-mcp](https://github.com/Mattlo0546/moodle-mcp), [blackboard-mcp](https://github.com/Mattlo0546/blackboard-mcp)
+- [SlideMate](https://github.com/Mattlo0546/slidemate): Mac app that installs these in one click

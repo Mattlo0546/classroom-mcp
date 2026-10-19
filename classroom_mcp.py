@@ -28,7 +28,7 @@ import webbrowser
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
-VERSION = "0.1.0"
+VERSION = "0.2.0"
 HOME = Path(os.environ.get("CLASSROOM_MCP_HOME", Path.home() / ".config" / "classroom-mcp"))
 SECRETS = Path(os.environ.get("GOOGLE_CLIENT_SECRETS", HOME / "client_secret.json"))
 TOKEN = HOME / "token.json"
@@ -625,13 +625,19 @@ def main():
             reply(handle(msg))
 
 
-if __name__ == "__main__":
-    if len(sys.argv) > 1 and sys.argv[1] == "login":  # `python3 classroom_mcp.py login` from a terminal
+def cli():
+    """`classroom-mcp [serve | login | sync [course]]` (also `python3 classroom_mcp.py …`)."""
+    cmd = sys.argv[1] if len(sys.argv) > 1 else "serve"
+    if cmd == "login":
         print(json.dumps(t_login({}), indent=1))
-    elif len(sys.argv) > 1 and sys.argv[1] == "sync":
+    elif cmd == "sync":
         start_sync(sys.argv[2] if len(sys.argv) > 2 else None)
         while JOB["running"]:
             time.sleep(1)
         print(json.dumps(JOB["report"], indent=1))
     else:
         main()
+
+
+if __name__ == "__main__":
+    cli()

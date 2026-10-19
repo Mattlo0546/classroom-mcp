@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "classroom-mcp"
+version = "0.2.0"
+description = "Google Classroom MCP server: courses, upcoming assignments, announcements, materials and class-slide download for Claude, Codex, Cursor and SlideMate. No dependencies."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.9"
+keywords = ["mcp", "model-context-protocol", "google-classroom", "classroom", "claude", "students", "education"]
+
+[project.urls]
+Homepage = "https://github.com/Mattlo0546/classroom-mcp"
+
+[project.scripts]
+classroom-mcp = "classroom_mcp:cli"
+
+[tool.setuptools]
+py-modules = ["classroom_mcp"]
