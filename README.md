@@ -4,6 +4,7 @@
 [![MCP](https://img.shields.io/badge/MCP-server-8A2BE2)](https://modelcontextprotocol.io)
 ![Python 3.9+](https://img.shields.io/badge/python-3.9%2B-blue)
 ![No dependencies](https://img.shields.io/badge/dependencies-none-brightgreen)
+[![M8ven Score](https://m8ven.ai/badge/mcp/mattlo0546-classroom-mcp-bumwh3?v=ac6c86508de2443d2227e91e4b98dd26)](https://m8ven.ai/mcp/mattlo0546-classroom-mcp-bumwh3?s=readme)
 
 **classroom-mcp** is an open-source [Model Context Protocol (MCP)](https://modelcontextprotocol.io) server for
 **Google Classroom**. It gives AI assistants (Claude Desktop, Claude Code, ChatGPT Codex, Cursor, VS Code and
